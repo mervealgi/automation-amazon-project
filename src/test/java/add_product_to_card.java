@@ -10,8 +10,8 @@ public class add_product_to_card {
 
     @Test
     public void search_the_product(){
-        homePage.searchbox().search("book");
-        Assertions.assertTrue(productsPage.isOnProductPage(),"Product is not on the page");
+        homePage.searchBox().search("book");
+        Assertions.assertTrue(productsPage.isOnProductPage(),"Not on the products page");
     }
 
     @Test
@@ -29,7 +29,7 @@ public class add_product_to_card {
     @Test
     public void view_cart(){
         homePage.goToCart();
-        Assertions.assertTrue(cartParge.checkIfProductAdded(), "Product didnt added to cart");
+        Assertions.assertTrue(cartPage.checkIfProductAdded(), "Product didnt added to cart");
     }
 
 }
