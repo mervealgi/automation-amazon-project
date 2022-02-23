@@ -2,7 +2,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 
-public class Test_add_product_to_card extends BaseTest{
+public class Test_add_product_to_cart extends BaseTest{
 
     HomePage homePage;
     ProductsPage productsPage;
@@ -14,7 +14,7 @@ public class Test_add_product_to_card extends BaseTest{
     public void search_the_product(){
         homePage = new HomePage(driver);
         productsPage = new ProductsPage(driver);
-        homePage.searchBox().search("book");
+        homePage.searchBox().search("saramago");
         Assertions.assertTrue(productsPage.isOnProductPage(),"Not on the products page");
     }
 

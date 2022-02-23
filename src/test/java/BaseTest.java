@@ -13,13 +13,13 @@ public class BaseTest {
     public void setUp(){
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
-        driver.get("https://www.amazon.com.tr/");
+        driver.get("https://www.amazon.com");
         driver.manage().window().maximize();
     }
 
     @AfterAll
     public void tearDown(){
-        driver.quit();
+       // driver.quit();
     }
 
 }
