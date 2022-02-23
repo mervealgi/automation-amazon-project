@@ -3,7 +3,7 @@ import org.openqa.selenium.WebDriver;
 
 public class SearchBox extends BasePage{
 
-    By searhBoxLocator = By.id("twotabsearchtextbox");
+    By searchBoxLocator = By.id("twotabsearchtextbox");
     By searchButtonLocator = By.id("nav-search-submit-button");
 
     public SearchBox(WebDriver driver) {
@@ -11,7 +11,7 @@ public class SearchBox extends BasePage{
     }
 
     public void search(String text) {
-        type(searhBoxLocator, text);
-        click(searchButtonLocator);
+        this.type(searchBoxLocator, text);
+        this.click(searchButtonLocator);
     }
 }

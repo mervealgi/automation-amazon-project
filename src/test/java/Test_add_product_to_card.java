@@ -2,7 +2,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 
-public class add_product_to_card extends BaseTest{
+public class Test_add_product_to_card extends BaseTest{
 
     HomePage homePage;
     ProductsPage productsPage;

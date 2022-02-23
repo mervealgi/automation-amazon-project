@@ -6,11 +6,10 @@ import java.util.List;
 
 public class BasePage {
 
-    WebDriver driver;
+    WebDriver driver ;
 
     public BasePage(WebDriver driver){
-
-        this.driver = driver;
+        this.driver = driver ;
     }
 
     public WebElement find(By locator){
@@ -25,11 +24,12 @@ public class BasePage {
         find(locator).click();
     }
 
-    public void type(By locator, String text){
+    public void type(By locator , String text){
         find(locator).sendKeys(text);
     }
 
     public Boolean isDisplayed(By locator){
         return find(locator).isDisplayed();
     }
+
 }
