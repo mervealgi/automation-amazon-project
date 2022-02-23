@@ -1,4 +1,5 @@
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 
 public class add_product_to_card extends BaseTest{
@@ -9,6 +10,7 @@ public class add_product_to_card extends BaseTest{
     CartPage cartPage;
 
     @Test
+    @Order(1)
     public void search_the_product(){
         homePage = new HomePage(driver);
         productsPage = new ProductsPage(driver);
@@ -17,6 +19,7 @@ public class add_product_to_card extends BaseTest{
     }
 
     @Test
+    @Order(2)
     public void select_the_product(){
         productDetailPage = new ProductDetailPage(driver);
         productsPage.selectProduct(1);
@@ -24,12 +27,14 @@ public class add_product_to_card extends BaseTest{
     }
 
     @Test
+    @Order(3)
     public void add_product_to_cart(){
         productDetailPage.addToCart();
         Assertions.assertTrue(homePage.isProductCounted(), "Product didnt add");
     }
 
     @Test
+    @Order(4)
     public void view_cart(){
         cartPage = new CartPage(driver);
         homePage.goToCart();
