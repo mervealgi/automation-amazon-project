@@ -22,7 +22,7 @@ public class add_product_to_card {
 
     @Test
     public void add_product_to_cart(){
-        productDetailPage.addToCard();
+        productDetailPage.addToCart();
         Assertions.assertTrue(homePage.isProductCounted(), "Product didnt add");
     }
 

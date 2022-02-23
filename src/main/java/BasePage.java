@@ -9,6 +9,7 @@ public class BasePage {
     WebDriver driver;
 
     public BasePage(WebDriver driver){
+
         this.driver = driver;
     }
 
@@ -26,5 +27,9 @@ public class BasePage {
 
     public void type(By locator, String text){
         find(locator).sendKeys(text);
+    }
+
+    public Boolean isDisplayed(By locator){
+        return find(locator).isDisplayed();
     }
 }
