@@ -22,6 +22,6 @@ public class ProductsPage extends BasePage{
     }
 
     private List<WebElement> getAllProducts(){
-        findAll(productNameLocator);
+        return findAll(productNameLocator);
     }
 }
