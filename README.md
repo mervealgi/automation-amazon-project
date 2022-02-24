@@ -1,7 +1,7 @@
 ## test case
 
 
-Test Steps          | Assetions
+Test Steps          | Assertions
 ------------------- | -------------
 Go to Website       | Are we on Website Home Page?
 Search for Product  | Are we on Products List Page?
