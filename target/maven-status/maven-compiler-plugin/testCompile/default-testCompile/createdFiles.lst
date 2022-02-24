@@ -1,2 +1,3 @@
 Test_add_product_to_cart.class
+TestResultLogger.class
 BaseTest.class
