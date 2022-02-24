@@ -7,7 +7,7 @@ import java.util.List;
 public class ProductsPage extends BasePage{
 
     By verifiedSearchLocator = By.cssSelector("span[class='a-color-state a-text-bold']");
-    By productNameLocator = By.cssSelector("span.a-size-base-plus]");
+    By productNameLocator = By.xpath("//div[@class='a-section aok-relative s-image-square-aspect']");
 
     public ProductsPage(WebDriver driver) {
         super(driver);
